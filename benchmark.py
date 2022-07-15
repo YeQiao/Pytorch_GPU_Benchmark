@@ -12,6 +12,7 @@ from models import *
 from torch.optim.lr_scheduler import StepLR, ReduceLROnPlateau
 from torchsummary import summary
 from utils import *
+from resnet import *
 import torchvision.models as models
 from torch.cuda.amp import autocast as autocast
 from torch.cuda.amp import GradScaler as GradScaler
@@ -125,11 +126,12 @@ def main():
         model = models.__dict__[args.arch](pretrained=True)
     else:
         print("=> creating model '{}'".format(args.arch))
-        model = models.__dict__[args.arch]()
-        if args.dataset == 'cifar10':
-            model.fc = nn.Linear(512, 10)
-        else:
-            model.fc = nn.Linear(512, 100)
+#         model = models.__dict__[args.arch]()
+#         if args.dataset == 'cifar10':
+#             model.fc = nn.Linear(512, 10)
+#         else:
+#             model.fc = nn.Linear(512, 100)
+        model = ResNet18()
     if args.gpu is not None:
         torch.cuda.set_device(args.gpu)
     torch.cuda.manual_seed(args.seed)
