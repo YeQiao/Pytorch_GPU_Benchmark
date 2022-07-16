@@ -8,7 +8,6 @@ from torch.autograd import Variable
 from torchvision import datasets, transforms
 import torch.nn.functional as F
 import torch.optim as optim
-from models import *
 from torch.optim.lr_scheduler import StepLR, ReduceLROnPlateau
 from torchsummary import summary
 from utils import *
