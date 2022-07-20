@@ -23,6 +23,7 @@ def train_fp16(args, model, epoch, train_loader, scaler, device, optimizer):
     print('learning_rate:', cur_lr)
     for batch_idx, (data, target) in enumerate(train_loader):
         data, target = data.to(device), target.to(device)
+        optimizer.zero_grad()
         with autocast():
             output = model(data)
             loss = F.cross_entropy(output, target)
@@ -41,6 +42,7 @@ def train_fp32(args, model, epoch, train_loader, device, optimizer):
     print('learning_rate:', cur_lr)
     for batch_idx, (data, target) in enumerate(train_loader):
         data, target = data.to(device), target.to(device)
+        optimizer.zero_grad()
         output = model(data)
         loss = F.cross_entropy(output, target)
         loss.backward()
