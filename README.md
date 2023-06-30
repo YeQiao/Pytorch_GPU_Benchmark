@@ -27,10 +27,10 @@ HSA_OVERRIDE_GFX_VERSION=10.3.0
 | rx6700xt | resnet 18  | 30 | fp16 | 2048 | 0.1 | 140w | 15m05s |
 | rx6700xt | resnet 18  | 30 | fp16 |  256 | 0.1 | 140w | 15m05s |
 |          |            |    |      |      |     |      |        |
-| rx6800xt | resnet 18  | 30 | fp16 |  512 | 0.1 | 270w |  9:43  |
+| rx6800xt | resnet 18  | 30 | fp16 |  512 | 0.1 | 270w |  9m43s  |
 |          |            |    |      |      |     |      |        |
-| rx6900xt | resnet 18  | 30 | fp16 |  512 | 0.1 | 270w |  7:55  |
-| rx6900xt | resnet 18  | 30 | fp16 | 2048 | 0.1 | 270w |  10:05 |
-| rx6900xt | resnet 18  | 30 | fp16 |  256 | 0.1 | 270w |  7:45  |
+| rx6900xt | resnet 18  | 30 | fp16 |  512 | 0.1 | 270w |  7m55s  |
+| rx6900xt | resnet 18  | 30 | fp16 | 2048 | 0.1 | 270w |  10m05s |
+| rx6900xt | resnet 18  | 30 | fp16 |  256 | 0.1 | 270w |  7m45s  |
 
-
+| rtx 4070 | resnet 18  | 30 | fp16 | 2048 | 0.1 | 200w |  6m32s |
