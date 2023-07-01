@@ -23,6 +23,7 @@ HSA_OVERRIDE_GFX_VERSION=10.3.0
 | rtx 4070 | resnet 18  | 30 | fp16 | 2048 | 0.1 | 200w |  6m32s |
 |          |            |    |      |      |     |      |        |
 | rtx 4060 | resnet 18  | 30 | fp16 | 512 | 0.1 | 100w |  8m41s |
+| rtx 4060 | resnet 18  | 30 | fp16 | 1024 | 0.1 | 100w |  8m38s |
 |          |            |    |      |      |     |      |        |
 |  rx6600  | resnet 18  | 30 | fp32 |  512 | 0.1 |  80w | 28m32s |
 |  rx6600  | resnet 18  | 30 | fp16 |  512 | 0.1 |  80w | 21m08s |
