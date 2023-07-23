@@ -9,8 +9,9 @@ for AMD NAVI based gpu (except navi 21) add:
 HSA_OVERRIDE_GFX_VERSION=10.3.0
 
 ```
-| rtx 2060 | resnet 18  | 30 | fp32 |  512 | 0.1 | 165w | 17m25s |
+| GPU model | network  | epoch | pricision | batch size | Initial lr | Typical power | time |
 |:--------:|:----------:|:--:|:----:|:----:|:---:|:----:|:------:|
+| rtx 2060 | resnet 18  | 30 | fp32 |  512 | 0.1 | 165w | 17m25s |
 | rtx 2060 | resnet 18  | 30 | fp16 |  512 | 0.1 | 165w |  8m26s |
 |          |            |    |      |      |     |      |        |
 | rtx 3080 | resnet 18  | 30 | fp32 |  512 | 0.1 | 336w |  7m59s |
@@ -24,6 +25,7 @@ HSA_OVERRIDE_GFX_VERSION=10.3.0
 |          |            |    |      |      |     |      |        |
 | rtx 4060 | resnet 18  | 30 | fp16 | 512 | 0.1 | 100w |  8m41s |
 | rtx 4060 | resnet 18  | 30 | fp16 | 1024 | 0.1 | 100w |  8m38s |
+|          |            |    |      |      |     |      |        |
 |          |            |    |      |      |     |      |        |
 |  rx6600  | resnet 18  | 30 | fp32 |  512 | 0.1 |  80w | 28m32s |
 |  rx6600  | resnet 18  | 30 | fp16 |  512 | 0.1 |  80w | 21m08s |
@@ -41,3 +43,4 @@ HSA_OVERRIDE_GFX_VERSION=10.3.0
 | rx6900xt | resnet 18  | 30 | fp16 |  256 | 0.1 | 270w |  7m45s  |
 |          |            |    |      |      |     |      |        |
 | rx7900xt | resnet 18  | 30 | fp16 |  512 | 0.1 | 250w |  5m48s  |
+| rx7900xt | resnet 18  | 30 | fp16 |  2048 | 0.1 | 250w |  5m52s  |
