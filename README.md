@@ -39,5 +39,5 @@ HSA_OVERRIDE_GFX_VERSION=10.3.0
 | rx6900xt | resnet 18  | 30 | fp16 |  512 | 0.1 | 270w |  7m55s  |
 | rx6900xt | resnet 18  | 30 | fp16 | 2048 | 0.1 | 270w |  10m05s |
 | rx6900xt | resnet 18  | 30 | fp16 |  256 | 0.1 | 270w |  7m45s  |
-
-
+|          |            |    |      |      |     |      |        |
+| rx7900xt | resnet 18  | 30 | fp16 |  512 | 0.1 | 250w |  5m48s  |
