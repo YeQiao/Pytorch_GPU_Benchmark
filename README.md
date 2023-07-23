@@ -9,7 +9,7 @@ for AMD NAVI based gpu (except navi 21) add:
 HSA_OVERRIDE_GFX_VERSION=10.3.0
 
 ```
-| GPU model | network  | epoch | pricision | batch size | Initial lr | Typical power | time |
+| GPU model | network  | epochs | pricision | batch sizes | initial lr | typical power | time |
 |:--------:|:----------:|:--:|:----:|:----:|:---:|:----:|:------:|
 | rtx 2060 | resnet 18  | 30 | fp32 |  512 | 0.1 | 165w | 17m25s |
 | rtx 2060 | resnet 18  | 30 | fp16 |  512 | 0.1 | 165w |  8m26s |
